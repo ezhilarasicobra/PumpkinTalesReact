@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../context/auth/authContext";
 
-const Home = props => {
+const Home = (props) => {
   const authContext = useContext(AuthContext);
   const { isAuthenticated } = authContext;
 
@@ -20,26 +20,30 @@ const Home = props => {
             <h2 className="">
               Pumpkin<span className="amber-text text-lighten-4">Tales</span>
             </h2>
-            <p className="flow-text " style={{color:"#D6C615"}}>Order Food From Your favourite Restaurant </p>
-            
+            <p className="flow-text " style={{ color: "#D6C615" }}>
+              Order Food From Your favourite Restaurant{" "}
+            </p>
           </div>
           <div className="card-action">
             <div className="card-links">
-              <Link to="/login">Login</Link>
-              <a
-                href="/register"
+              <button
                 className="btn btn-large waves-effect waves-light "
-                style={{backgroundColor:"#86C232"}}
+                style={{ backgroundColor: "#86C232" }}
               >
-                Register
-              </a>
-              <a
-                href="/login"
+                <Link to="/register" style={{ color: "white" }}>
+                  Register
+                </Link>
+              </button>
+              <button
+        
                 className="btn btn-large waves-effect "
-                style={{backgroundColor:"#86C232"}}
+                style={{ backgroundColor: "#86C232" }}
+                
               >
+                <Link to="/login" style={{ color: "white" }}>
                 Login
-              </a>
+                </Link>
+              </button>
             </div>
           </div>
         </div>
