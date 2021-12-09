@@ -1,4 +1,5 @@
 import React, { useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 import AuthContext from "../context/auth/authContext";
 
 const Home = props => {
@@ -24,6 +25,7 @@ const Home = props => {
           </div>
           <div className="card-action">
             <div className="card-links">
+              <Link to="/login">Login</Link>
               <a
                 href="/register"
                 className="btn btn-large waves-effect waves-light "
