@@ -123,9 +123,9 @@ label[for="add"] {
 }
 
 #showcase .card .btn:hover {
-  background-color: #fff !important;
-  color: #A4A71E;
-  border-bottom: 5px solid #A4A71E;
+  background-color: rgb(19, 18, 18) !important;
+  color: #e9e9e0;
+  border-bottom: 5px solid #d3d3cc;
 }
 
 .form-container {
